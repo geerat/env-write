@@ -1,4 +1,40 @@
 # env-write
-This package makes ENV file creation super easy!
+This package makes ENV file creation super easy! Plus it's less than 1 KB!
 
-You simply pass a JSON object containing key value pairs for the desired variables and the filename, to the `generateENV` method. The method returns a Blob object containing the generated env file. It's that easy!
+## Getting Started
+
+# Install
+
+`npm i env-write`
+
+## Use
+
+To download an ENV file to a client:
+
+```
+import 'envWrite' from 'env-write';
+
+const yourFileName = "settings";
+
+const yourData = {
+    Item1: "item 1 contents",
+    Item2: "<maybe a hex colour>",
+    Item3: "<maybe a base url>"
+}
+
+envWrite.generateAndDownloadENV(yourData, yourFileName);
+```
+
+To just get a Blob 
+
+```
+import 'envWrite' from 'env-write';
+
+const yourData = {
+    Item1: "item 1 contents",
+    Item2: "<maybe a hex colour>",
+    Item3: "<maybe a base url>"
+}
+
+envWrite.generateENV(yourData);
+```

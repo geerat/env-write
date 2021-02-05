@@ -1,6 +1,6 @@
 {
   "name": "env-write",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This package makes ENV file creation super easy!",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,10 @@
     "env",
     "generate",
     "environment",
-    "variables"
+    "variables",
+    "front-end",
+    "web",
+    "small"
   ],
   "author": "geerat",
   "license": "ISC",
