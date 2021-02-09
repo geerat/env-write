@@ -1,5 +1,5 @@
 # env-write
-This package makes ENV file creation super easy! Plus it's less than 1 KB!
+This package makes ENV file creation super easy! Plus it's less than 2 KB!
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ This package makes ENV file creation super easy! Plus it's less than 1 KB!
 To download an ENV file to a client:
 
 ```
-import 'envWrite' from 'env-write';
+import { generateAndDownloadENV } from 'env-write';
 
 const yourFileName = "settings";
 
@@ -22,13 +22,13 @@ const yourData = {
     Item3: "<maybe a base url>"
 }
 
-envWrite.generateAndDownloadENV(yourData, yourFileName);
+generateAndDownloadENV(yourData, yourFileName);
 ```
 
 To just get a Blob 
 
 ```
-import 'envWrite' from 'env-write';
+import { generateENV } from 'env-write';
 
 const yourData = {
     Item1: "item 1 contents",
@@ -36,5 +36,5 @@ const yourData = {
     Item3: "<maybe a base url>"
 }
 
-envWrite.generateENV(yourData);
+generateENV(yourData);
 ```
